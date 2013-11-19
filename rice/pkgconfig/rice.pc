@@ -1,0 +1,10 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: rice
+Description: Rice - Ruby Interface for C++ Extensions
+Version: 1.5.1
+Libs.private: -L${libdir} -lrice
+Cflags: -I${includedir}
