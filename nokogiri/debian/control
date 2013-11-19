@@ -1,0 +1,24 @@
+Source: ruby-nokogiri
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders:  <>
+DM-Upload-Allowed: yes
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.2.13~)
+Standards-Version: 3.9.2
+#Vcs-Git: git://git.debian.org/pkg-ruby-extras/ruby-nokogiri.git
+#Vcs-Browser: http://git.debian.org/?p=pkg-ruby-extras/ruby-nokogiri.git;a=summary
+Homepage: http://nokogiri.org
+XS-Ruby-Versions: all
+
+Package: ruby-nokogiri
+Architecture: any
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter, libxml2-dev, libxslt-dev, ruby-minitest, ruby-mini-portile
+# mini_portile (~> 0.5.0), hoe-bundler (>= 1.1, development), hoe-debugging (>= 1.0.3, development), hoe-gemspec (>= 1.0, development), hoe-git (>= 1.4, development), minitest (~> 2.2.2, development), rake (>= 0.9, development), rake-compiler (~> 0.8.0, development), racc (>= 1.4.6, development), rexical (>= 1.0.5, development), rdoc (~> 3.10, development), hoe (~> 2.16, development)
+Description: Nokogiri (鋸) is an HTML, XML, SAX, and Reader parser
+ Nokogiri (鋸) is an HTML, XML, SAX, and Reader parser.  Among Nokogiri's
+ many features is the ability to search documents via XPath or CSS3 selectors.
+ .
+ XML is like violence - if it doesn’t solve your problems, you are not using
+ enough of it.
