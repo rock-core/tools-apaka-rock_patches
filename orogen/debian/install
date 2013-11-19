@@ -1,0 +1,3 @@
+# Hhm, everything will be install expect for Doxyfile.in 
+# so trying to force it
+lib/orogen/templates/Doxyfile.in /usr/lib/ruby/vendor_ruby/orogen/templates/
