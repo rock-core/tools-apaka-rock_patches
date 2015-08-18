@@ -1,0 +1,19 @@
+source: ruby-qtbindings
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders:  <>
+DM-Upload-Allowed: yes
+Build-Depends:  debhelper,  gem2deb, cmake, libqt4-dev, libqt4-opengl-dev, dh-autoreconf
+Standards-Version: 3.9.2
+#Vcs-Git: git://git.debian.org/pkg-ruby-extras/ruby-qtbindings.git
+#Vcs-Browser: http://git.debian.org/?p=pkg-ruby-extras/ruby-qtbindings.git;a=summary
+Homepage: http://github.com/ryanmelt/qtbindings
+XS-Ruby-Versions: all
+
+Package: ruby-qtbindings
+Architecture: any
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter, dh-autoreconf
+Description: Qt bindings for ruby
+ qtbindings provides ruby bindings to QT4.x. It is derived from the kdebindings project.
