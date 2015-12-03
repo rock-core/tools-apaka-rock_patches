@@ -28,8 +28,8 @@ if windows
 end
 
 main_dir = Dir.pwd
-if prefix = ENV['RUBY_CMAKE_PREFIX_PATH']
-    prefix = ENV['RUBY_CMAKE_PREFIX_PATH'].split(":").first
+if prefix = ENV['RUBY_CMAKE_INSTALL_PREFIX']
+    prefix = ENV['RUBY_CMAKE_INSTALL_PREFIX'].split(":").first
 
     if prefix !~ /^\//
         prefix = File.absolute_path( File.join(main_dir, prefix) )
