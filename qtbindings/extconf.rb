@@ -27,21 +27,6 @@ if windows
   end
 end
 
-main_dir = Dir.pwd
-if prefix = ENV['RUBY_CMAKE_INSTALL_PREFIX']
-    prefix = ENV['RUBY_CMAKE_INSTALL_PREFIX'].split(":").first
-
-    if prefix !~ /^\//
-        prefix = File.absolute_path( File.join(main_dir, prefix) )
-    end
-else
-    prefix = File.absolute_path( File.join(main_dir,"debian","ruby-qtbindings","usr") )
-end
-
-# FORCE /opt/rock/master/ installation
-prefix = prefix.gsub(/\/usr/,"/opt/rock/master")
-puts "Using install prefix: #{prefix}"
-
 File.open('Makefile', 'w') do |file|
   if windows
     file.puts "all: clean build"
@@ -215,11 +200,18 @@ File.open('Makefile', 'w') do |file|
     file.puts ""
     file.puts "build: makedirs"
     file.puts "\t-cd ext/build; \\"
+
+    debian_dir = File.absolute_path( File.join(Dir.pwd,"debian") )
+    directory = Dir.glob(debian_dir +"/**").select {|dir| dir =~ /ruby-qtbindings$/ }
+    prefix = File.absolute_path( File.join(directory,ENV['RUBY_CMAKE_INSTALL_PREFIX']) )
+    puts "Using install prefix: #{prefix}"
+
     archdir = RbConfig::CONFIG['archdir'].gsub(/\/usr/,prefix)
     sitelibdir = RbConfig::CONFIG['sitedir'].gsub(/\/usr\/local/,prefix)
     puts "Using archdir: #{archdir}"
     puts "Using sitelibdir: #{sitelibdir}"
     file.puts "cmake -DCMAKE_MINIMUM_REQUIRED_VERSION=2.6 -DCUSTOM_RUBY_SITE_ARCH_DIR=#{archdir} -DCUSTOM_RUBY_SITE_LIB_DIR=#{sitelibdir} -DCMAKE_INSTALL_PREFIX=#{prefix} \\"
+
     file.puts "-G \"Unix Makefiles\" \\"
     if ARGV[0] == '-d'
       file.puts "-DCMAKE_BUILD_TYPE=Debug \\"
@@ -227,7 +219,7 @@ File.open('Makefile', 'w') do |file|
     file.puts "-Wno-dev \\"
     file.puts "-DRUBY_EXECUTABLE=#{File.join(RbConfig::CONFIG['bindir'], RbConfig::CONFIG['RUBY_INSTALL_NAME'])} \\"
     file.puts ".."
-    file.puts "\tcd ext/build; make"
+    file.puts "\tcd ext/build; make install"
     file.puts ""
     file.puts "install: makedirs"
     if macosx
@@ -270,7 +262,6 @@ File.open('Makefile', 'w') do |file|
       file.puts "\t-cp ext/build/ruby/qtwebkit/qtwebkit.* lib/#{ruby_version}"
       file.puts "\t-cp ext/build/ruby/qtruby/tools/rbrcc/rbrcc bin/#{ruby_version}"
       file.puts "\t-cp ext/build/ruby/qtruby/tools/rbuic/rbuic4 bin/#{ruby_version}"
-      file.puts "\tcd ext/build; make install"
     end
   end
 end
