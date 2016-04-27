@@ -1,5 +1,5 @@
-prefix=/usr
-exec_prefix=/usr
+prefix=${rock_install_dir}
+exec_prefix=${rock_install_dir}
 libdir=${prefix}/lib
 includedir=${prefix}/include
 
