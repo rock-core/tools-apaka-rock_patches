@@ -3,6 +3,7 @@ find_package(Rock)
 rock_init(vizkit 1.0)
 set(GEM_DEBUG ON)
 set(GEM_OS_PKG ON)
+set(RUBY_USE_PROJECT_INSTALL_PREFIX TRUE)
 include(RockRuby)
 
 find_package(Gem COMPONENTS rice)
