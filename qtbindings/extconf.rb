@@ -201,9 +201,7 @@ File.open('Makefile', 'w') do |file|
     file.puts "build: makedirs"
     file.puts "\t-cd ext/build; \\"
 
-    debian_dir = File.absolute_path( File.join(Dir.pwd,"debian") )
-    directory = Dir.glob(debian_dir +"/**").select {|dir| dir =~ /ruby-qtbindings$/ }
-    prefix = File.absolute_path( File.join(directory,ENV['RUBY_CMAKE_INSTALL_PREFIX']) )
+    prefix = File.absolute_path(ENV['RUBY_CMAKE_INSTALL_PREFIX'])
     puts "Using install prefix: #{prefix}"
 
     archdir = RbConfig::CONFIG['archdir'].gsub(/\/usr/,prefix)
