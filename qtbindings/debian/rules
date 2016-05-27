@@ -16,12 +16,21 @@
 	dh $@ --buildsystem=ruby --with ruby
 
 override_dh_link:
+ifeq (,$(wildcard $(rock_install_dir)/lib/ruby/2.0.0))
 	dh_link $(rock_install_dir)/lib/x86_64-linux-gnu/ruby/2.0.0 $(rock_install_dir)/lib/x86_64-linux-gnu/ruby/2.0
 	dh_link $(rock_install_dir)/lib/ruby/2.0.0 $(rock_install_dir)/ruby/2.0
 	dh_link $(rock_install_dir)/lib/arm-linux-gnueabi/ruby/2.0.0 $(rock_install_dir)/lib/arm-linux-gnueabi/ruby/2.0
+endif
+ifeq (,$(wildcard $(rock_install_dir)/lib/ruby/2.1.0))
 	dh_link $(rock_install_dir)/lib/x86_64-linux-gnu/ruby/2.1.0 $(rock_install_dir)/lib/x86_64-linux-gnu/ruby/2.1
 	dh_link $(rock_install_dir)/lib/ruby/2.1.0 $(rock_install_dir)/ruby/2.1
 	dh_link $(rock_install_dir)/lib/arm-linux-gnueabi/ruby/2.1.0 $(rock_install_dir)/lib/arm-linux-gnueabi/ruby/2.1
+endif
+ifeq (,$(wildcard $(rock_install_dir)/lib/ruby/2.3.0))
+	dh_link $(rock_install_dir)/lib/x86_64-linux-gnu/ruby/2.3.0 $(rock_install_dir)/lib/x86_64-linux-gnu/ruby/2.3
+	dh_link $(rock_install_dir)/lib/ruby/2.3.0 $(rock_install_dir)/ruby/2.3
+	dh_link $(rock_install_dir)/lib/arm-linux-gnueabi/ruby/2.3.0 $(rock_install_dir)/lib/arm-linux-gnueabi/ruby/2.3
+endif
 
 override_dh_shlibdeps:
 	dh_shlibdeps -l$(shell pwd)/debian/ruby-qtbindings$(rock_install_dir)/lib/
