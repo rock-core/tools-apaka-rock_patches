@@ -1,0 +1,2 @@
+Place all gems into corresponding subdirectories, that have been specifically prepared, i.e.
+it this folder here -- concurrent ruby etc. have been added to avoid automatic native extension building
