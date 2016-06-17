@@ -1,0 +1,12 @@
+#!/bin/sh
+# post install script for the debianized tools/orogen package
+set -e
+
+rock_install_dir=@ROCK_INSTALL_DIR@
+
+orogen_version_file=${rock_install_dir}/lib/ruby/vendor_ruby/orogen/version.rb
+orogen_version_file_link=${rock_install_dir}/lib/orogen/version.rb
+if [ -e ${orogen_version_file} ] && [ ! -e ${orogen_version_file_link} ]; then
+    mkdir -p ${rock_install_dir}/lib/orogen
+    ln -s ${orogen_version_file} ${orogen_version_file_link}
+fi
