@@ -11,7 +11,7 @@
 # If you need to specify the .gemspec (eg there is more than one)
 #export DH_RUBY_GEMSPEC=gem.gemspec
 
-#rock_install_dir= needs to be added after applying the overlay throught the deb_package
+rock_install_dir=@ROCK_INSTALL_DIR@
 %:
 	dh $@ --buildsystem=ruby --with ruby
 
