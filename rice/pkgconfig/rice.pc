@@ -1,3 +1,4 @@
+rock_install_dir=@ROCK_INSTALL_DIR@
 prefix=${rock_install_dir}
 exec_prefix=${rock_install_dir}
 libdir=${prefix}/lib
