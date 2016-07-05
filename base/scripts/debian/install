@@ -1,1 +1,1 @@
-shell /usr/share/scripts
+shell @ROCK_INSTALL_DIR@/share/scripts
