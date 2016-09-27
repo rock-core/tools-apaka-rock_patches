@@ -1,0 +1,44 @@
+Format: 1.8
+Date: Mon, 08 Sep 2014 14:07:02 -0300
+Source: gem2deb
+Binary: gem2deb gem2deb-test-runner
+Architecture: source all
+Version: 0.10
+Distribution: unstable
+Urgency: medium
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Changed-By: Antonio Terceiro <terceiro@debian.org>
+Description:
+ gem2deb    - Debian Ruby packaging suite
+ gem2deb-test-runner - Debian Ruby packaging suite - tool to run tests
+Changes:
+ gem2deb (0.10) unstable; urgency=medium
+ .
+   * gem2deb-test-runner: add '.' to $LOAD_PATH with --autopkgtest
+   * dh-make-ruby won't create debian/tests/control anymore since autopkgtest
+     will now auto-detect Ruby packages and assume an implicit tests
+     definition. debian/tests/control.ex will be created instead, with comments
+     explaining to either modify it and rename to control, or delete it.
+   * dh-make-ruby: when test/ or spec/ exists, create debian/ruby-tests.rake
+     with the appropriate rake invocation to run the tests, instead of being
+     insecure and creating files all commented out.
+   * install 'gem2deb/rake/testtask.rb' to gem2deb-test-runner instead of
+     gem2deb
+   * dh-make-ruby: generate uncommented Vcs-* headers in debian/control
+   * dh-make-ruby: remove version qualifier from build-dependency on gem2deb to
+     remove friction when backporting.
+Checksums-Sha1:
+ 856d472079e3551bf3a9258b8d04007faaf473e2 1136 gem2deb_0.10.dsc
+ 8e8f80b0e3945d152fdc5b24946aa237505bbed0 51108 gem2deb_0.10.tar.xz
+ e3e28e4fc36537d41bee55c2e8d0029bd148e36e 46278 gem2deb_0.10_all.deb
+ 88d5191892200d128d9c6fe7dda5dfcf96646c6c 12508 gem2deb-test-runner_0.10_all.deb
+Checksums-Sha256:
+ 0a20253d27b37dd0262426efc1e323d447ee2c7b0a9b7d3dfca4aeb885e18631 1136 gem2deb_0.10.dsc
+ 884858fa3a3f8d10a534a397b5f3275e0819c8f260e9dbe9f8c3f00bfcd7d3ef 51108 gem2deb_0.10.tar.xz
+ a493376e5b3b31707c23a3e423206ed27f2f8f80ac9c26ff501c0a5fcae36388 46278 gem2deb_0.10_all.deb
+ 17650e76c5f08902da275993d3ac10aad295ec1750b4c046e47ce42e4fce19a1 12508 gem2deb-test-runner_0.10_all.deb
+Files:
+ 03088fa1d9951994102a6af0b7a970bf 1136 ruby optional gem2deb_0.10.dsc
+ 19ee8ac82de2db74269dca7fc8a21bd4 51108 ruby optional gem2deb_0.10.tar.xz
+ 2c3c8a0ac9ff98a6e7d94650ae7a4c82 46278 ruby optional gem2deb_0.10_all.deb
+ f9fb63f4347c9b7c643d5280b416624c 12508 ruby optional gem2deb-test-runner_0.10_all.deb
