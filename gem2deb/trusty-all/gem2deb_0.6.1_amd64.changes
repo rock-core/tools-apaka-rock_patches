@@ -19,14 +19,14 @@ Changes:
    [ Antonio Terceiro ]
    * Add unit test for regression fix when handling test failures
 Checksums-Sha1: 
- c6b5f0dfd86aed2ed31cbf4f8f5df71a2424dc21 1025 gem2deb_0.6.1.dsc
- 9c5b0c4206e16076456724beff6a925ba7c42f90 60757 gem2deb_0.6.1.tar.gz
- c6cfb2675303c90b441ae6935b2c8b99180a0b28 44438 gem2deb_0.6.1_all.deb
+ 5345691a8769ad8235c326dea33581b19cbf3e32 1025 gem2deb_0.6.1.dsc
+ 0c008021e8a4e23b9b5a335d7a5fe874b6c7b112 60316 gem2deb_0.6.1.tar.gz
+ bd46db2799738c0a25972f8ac6f2f1f825947aef 44480 gem2deb_0.6.1_all.deb
 Checksums-Sha256: 
- 6a6e2b85208aa5522ff1b8edd7150d304a3399556679313f776f3bcec93146df 1025 gem2deb_0.6.1.dsc
- ad36efa1b489eac24897664b02a4dd4e156a081f2d2f8bd5cfca6ea6b95f74c2 60757 gem2deb_0.6.1.tar.gz
- 82e920c2c404e79ca7b1e8a218d929d250d8821e0e7d00471b30e63e7b644ef4 44438 gem2deb_0.6.1_all.deb
+ afed2ab304bad3215e3cdc33d243e750da38d3b164f9b9b5799a2a2a70064f38 1025 gem2deb_0.6.1.dsc
+ 2ecca77f22502bdf9afe3039a585e0055c5a951f6947c161a4f737e64c1511a5 60316 gem2deb_0.6.1.tar.gz
+ 0966846b16da320b9ee3dad0495fcf3aa7af86d90b008ef7868012683fec38da 44480 gem2deb_0.6.1_all.deb
 Files: 
- 876a18e89fc5d40b16781a249c4e6a29 1025 ruby optional gem2deb_0.6.1.dsc
- 5ef2a4fd2d85226e409ce4253d046ad1 60757 ruby optional gem2deb_0.6.1.tar.gz
- 9cbee2834d441f547beba1280dfeece5 44438 ruby optional gem2deb_0.6.1_all.deb
+ d75fb1ecc5abce9e15b192114f58af8c 1025 ruby optional gem2deb_0.6.1.dsc
+ a15984594bfff8f7ee13fcd28006eaa1 60316 ruby optional gem2deb_0.6.1.tar.gz
+ 62fba16006f08d3f67d226815c9a167d 44480 ruby optional gem2deb_0.6.1_all.deb

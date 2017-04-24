@@ -28,17 +28,17 @@ Changes:
    * dh-make-ruby: remove version qualifier from build-dependency on gem2deb to
      remove friction when backporting.
 Checksums-Sha1:
- 856d472079e3551bf3a9258b8d04007faaf473e2 1136 gem2deb_0.10.dsc
- 8e8f80b0e3945d152fdc5b24946aa237505bbed0 51108 gem2deb_0.10.tar.xz
- e3e28e4fc36537d41bee55c2e8d0029bd148e36e 46278 gem2deb_0.10_all.deb
- 88d5191892200d128d9c6fe7dda5dfcf96646c6c 12508 gem2deb-test-runner_0.10_all.deb
+ 9dbf4cab096efca6ee7f13571f3050914fb0b44a 1136 gem2deb_0.10.dsc
+ 5d47f0cbb7b0540ef7e13e964170f73e72a5b149 51096 gem2deb_0.10.tar.xz
+ 132db4fcf1dff4368ed7110f8034e40ec066c038 46168 gem2deb_0.10_all.deb
+ e223e7bd603546986107a28919ca8f5acad83bff 12538 gem2deb-test-runner_0.10_all.deb
 Checksums-Sha256:
- 0a20253d27b37dd0262426efc1e323d447ee2c7b0a9b7d3dfca4aeb885e18631 1136 gem2deb_0.10.dsc
- 884858fa3a3f8d10a534a397b5f3275e0819c8f260e9dbe9f8c3f00bfcd7d3ef 51108 gem2deb_0.10.tar.xz
- a493376e5b3b31707c23a3e423206ed27f2f8f80ac9c26ff501c0a5fcae36388 46278 gem2deb_0.10_all.deb
- 17650e76c5f08902da275993d3ac10aad295ec1750b4c046e47ce42e4fce19a1 12508 gem2deb-test-runner_0.10_all.deb
+ c95e07b31f0831d24a430af421620a6f821703cb515d5e5ebc26fafd09664461 1136 gem2deb_0.10.dsc
+ 04a26dc0e210cec1e19aaca269e6ccba9d44124dc5e9bbac8c6af015ea5898bf 51096 gem2deb_0.10.tar.xz
+ 46f3a3a67fbc07349392c4293215b166687e6faa1c6e6229afef95828c180340 46168 gem2deb_0.10_all.deb
+ 621d29cc909b4adc3f7cfea841b1462e1c36033c1a784cea9e0f296b4ca2e642 12538 gem2deb-test-runner_0.10_all.deb
 Files:
- 03088fa1d9951994102a6af0b7a970bf 1136 ruby optional gem2deb_0.10.dsc
- 19ee8ac82de2db74269dca7fc8a21bd4 51108 ruby optional gem2deb_0.10.tar.xz
- 2c3c8a0ac9ff98a6e7d94650ae7a4c82 46278 ruby optional gem2deb_0.10_all.deb
- f9fb63f4347c9b7c643d5280b416624c 12508 ruby optional gem2deb-test-runner_0.10_all.deb
+ 4214d65a4172ad9c307e875f330bb8c4 1136 ruby optional gem2deb_0.10.dsc
+ 22e4f88ec68dd6f858a01db64a90d568 51096 ruby optional gem2deb_0.10.tar.xz
+ 0abb0509245af14cdc037431e46ac8dc 46168 ruby optional gem2deb_0.10_all.deb
+ fc277d87fdd31d756c40b099383ff455 12538 ruby optional gem2deb-test-runner_0.10_all.deb

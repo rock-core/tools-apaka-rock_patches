@@ -12,8 +12,8 @@ Build-Depends: debhelper (>= 7.0.50~), rake, ruby-shoulda-context, ruby-mocha (>
 Package-List: 
  gem2deb deb ruby optional
 Checksums-Sha1: 
- 9c5b0c4206e16076456724beff6a925ba7c42f90 60757 gem2deb_0.6.1.tar.gz
+ 0c008021e8a4e23b9b5a335d7a5fe874b6c7b112 60316 gem2deb_0.6.1.tar.gz
 Checksums-Sha256: 
- ad36efa1b489eac24897664b02a4dd4e156a081f2d2f8bd5cfca6ea6b95f74c2 60757 gem2deb_0.6.1.tar.gz
+ 2ecca77f22502bdf9afe3039a585e0055c5a951f6947c161a4f737e64c1511a5 60316 gem2deb_0.6.1.tar.gz
 Files: 
- 5ef2a4fd2d85226e409ce4253d046ad1 60757 gem2deb_0.6.1.tar.gz
+ a15984594bfff8f7ee13fcd28006eaa1 60316 gem2deb_0.6.1.tar.gz

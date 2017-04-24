@@ -14,8 +14,8 @@ Package-List:
  gem2deb deb ruby optional arch=all
  gem2deb-test-runner deb ruby optional arch=all
 Checksums-Sha1:
- 8e8f80b0e3945d152fdc5b24946aa237505bbed0 51108 gem2deb_0.10.tar.xz
+ 5d47f0cbb7b0540ef7e13e964170f73e72a5b149 51096 gem2deb_0.10.tar.xz
 Checksums-Sha256:
- 884858fa3a3f8d10a534a397b5f3275e0819c8f260e9dbe9f8c3f00bfcd7d3ef 51108 gem2deb_0.10.tar.xz
+ 04a26dc0e210cec1e19aaca269e6ccba9d44124dc5e9bbac8c6af015ea5898bf 51096 gem2deb_0.10.tar.xz
 Files:
- 19ee8ac82de2db74269dca7fc8a21bd4 51108 gem2deb_0.10.tar.xz
+ 22e4f88ec68dd6f858a01db64a90d568 51096 gem2deb_0.10.tar.xz
