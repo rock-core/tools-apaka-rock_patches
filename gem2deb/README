@@ -1,0 +1,15 @@
+
+# Gem2deb
+
+## Gem2deb requires adaption in order to install the ruby gems into the correct folder
+
+Adaptions are maintained at https://github.com/2maz/gem2deb for various platforms
+
+## The original sources can be found at
+
+ * https://anonscm.debian.org/cgit/pkg-ruby-extras/gem2deb.git
+
+## Generate updated version for new distribution
+
+ * rebase the existing changes on the particular version you need
+ * build the version and add the deb files to the repository

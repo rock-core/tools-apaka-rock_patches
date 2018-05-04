@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Wed, 07 Dec 2016 14:47:07 -0200
+Source: gem2deb
+Binary: gem2deb gem2deb-test-runner
+Architecture: source amd64
+Version: 0.33.1
+Distribution: unstable
+Urgency: medium
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Changed-By: Antonio Terceiro <terceiro@debian.org>
+Description:
+ gem2deb    - Debian Ruby packaging suite
+ gem2deb-test-runner - Debian Ruby packaging suite - tool to run tests
+Changes:
+ gem2deb (0.33.1) unstable; urgency=medium
+ .
+   * Gem2Deb::GemInstaller:
+     - don't install extra_rdoc_files
+     - don't install examples/*
+Checksums-Sha1:
+ 5f7518ce32c769f627a8caabd363372992198934 1412 gem2deb_0.33.1.dsc
+ 712d911f0334fcffa2cd5596aaeb40c6cab8ec81 66124 gem2deb_0.33.1.tar.xz
+ b896299051dfdfa25b87d4a703a00993adbd2c57 20390 gem2deb-test-runner_0.33.1_amd64.deb
+ fcd49ef84419b1b1eafe32ccd2d120d5c8c89175 7868 gem2deb_0.33.1_amd64.buildinfo
+ 69a8dc6fc09f19a6c93bd627682f5aa94226ea67 57028 gem2deb_0.33.1_amd64.deb
+Checksums-Sha256:
+ dbc8f6a39060a2c0983373e726e39c2f075e5f3ef6e4ea766e84ec251cbd8fe2 1412 gem2deb_0.33.1.dsc
+ 702815a2e058f758cc5134e8fd97cbf94d2efed9dc204d74095aa7f6bbadfcd3 66124 gem2deb_0.33.1.tar.xz
+ ebf8162acbcfb668595af13c049c42284ce53237ba379f68e9dd01c15633a4f2 20390 gem2deb-test-runner_0.33.1_amd64.deb
+ 8a5daf13da246c056e15fb1e135d1d36dd044de66482cdfadf326394a29a0c78 7868 gem2deb_0.33.1_amd64.buildinfo
+ 464336d8b3c71201a7015782dce28fbffcde75c56c8c906c34fdc028cd80fae8 57028 gem2deb_0.33.1_amd64.deb
+Files:
+ 15bc7d241d7b2002bee9a6a1faad4d84 1412 ruby optional gem2deb_0.33.1.dsc
+ 31f08463c74b6155f6d9eaef06d7b8c0 66124 ruby optional gem2deb_0.33.1.tar.xz
+ e5cfcabce105a85f0d4ef34f218a333a 20390 ruby optional gem2deb-test-runner_0.33.1_amd64.deb
+ f74f2bf36112051c2792b8eaf2b76925 7868 ruby optional gem2deb_0.33.1_amd64.buildinfo
+ ccba6eac0f0f33608e2484b7cc0df6d1 57028 ruby optional gem2deb_0.33.1_amd64.deb
