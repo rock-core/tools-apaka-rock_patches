@@ -18,11 +18,11 @@ end
 if windows
   # README! - Modify this path if you have QT installed somewhere else
   # or if you have a different version of QT you want to link to.
-  qt_sdk_path = "C:\\Qt\\4.8.6"
+  qt_sdk_path = ENV['QTBINDINGS_QT_PATH']
   begin
     File::Stat.new(qt_sdk_path)
   rescue
-    puts "ERROR! QT SDK doesn't exist at #{qt_sdk_path}"
+    puts "ERROR! QT SDK doesn't exist at #{qt_sdk_path}. Please set environment QTBINDINGS_QT_PATH"
     exit # Not much we can do if the QT SDK doesn't exist
   end
 end
@@ -201,6 +201,8 @@ File.open('Makefile', 'w') do |file|
     file.puts "build: makedirs"
     file.puts "\t-cd ext/build; \\"
 
+    # rock-packaging begin
+    #-file.puts "cmake -DCMAKE_MINIMUM_REQUIRED_VERSION=2.6 \\"
     prefix = File.absolute_path(ENV['RUBY_CMAKE_INSTALL_PREFIX'])
     puts "Using install prefix: #{prefix}"
 
@@ -209,6 +211,8 @@ File.open('Makefile', 'w') do |file|
     puts "Using archdir: #{archdir}"
     puts "Using sitelibdir: #{sitelibdir}"
     file.puts "cmake -DCMAKE_MINIMUM_REQUIRED_VERSION=2.6 -DCUSTOM_RUBY_SITE_ARCH_DIR=#{archdir} -DCUSTOM_RUBY_SITE_LIB_DIR=#{sitelibdir} -DCMAKE_INSTALL_PREFIX=#{prefix} \\"
+    # rock-packaging end
+
 
     file.puts "-G \"Unix Makefiles\" \\"
     if ARGV[0] == '-d'
@@ -217,7 +221,10 @@ File.open('Makefile', 'w') do |file|
     file.puts "-Wno-dev \\"
     file.puts "-DRUBY_EXECUTABLE=#{File.join(RbConfig::CONFIG['bindir'], RbConfig::CONFIG['RUBY_INSTALL_NAME'])} \\"
     file.puts ".."
+    # rock-packaging begin
+    #-file.puts "\tcd ext/build; make"
     file.puts "\tcd ext/build; make install"
+    # rock-packaging end
     file.puts ""
     file.puts "install: makedirs"
     if macosx
