@@ -8,8 +8,10 @@ Adaptions are maintained at https://github.com/2maz/gem2deb for various platform
 ## The original sources can be found at
 
  * https://anonscm.debian.org/cgit/pkg-ruby-extras/gem2deb.git
+ * https://salsa.debian.org/ruby-team/gem2deb
 
 ## Generate updated version for new distribution
 
  * rebase the existing changes on the particular version you need
  * build the version and add the deb files to the repository
+  * DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -d -a i386 -uc -us
