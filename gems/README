@@ -1,6 +1,16 @@
 Place all gems into corresponding subdirectories, that have been specifically prepared, i.e.
 it this folder here -- concurrent ruby etc. have been added to avoid automatic native extension building
 
+## UPDATED
+git clone https://github.com/ruby-concurrency/concurrent-ruby
+
+bundle update
+install openjdk8-jdk (for javac)
+install jruby
+export JRUBY_HOME=/usr/share/jruby
+rake gem
+
+# Archived
 git clone https://github.com/ruby-concurrency/concurrent-ruby
 rake build:core
 
