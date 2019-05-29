@@ -6,6 +6,6 @@ includedir=${prefix}/include
 
 Name: rice
 Description: Rice - Ruby Interface for C++ Extensions
-Version: 1.5.1
+Version: 2.1.3
 Libs.private: -L${libdir} -lrice
-Cflags: -I${includedir}
+Cflags: -I${includedir} -std=c++11
