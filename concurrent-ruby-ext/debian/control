@@ -1,10 +1,10 @@
 Source: ruby-concurrent-ruby-ext
 Section: ruby
 Priority: optional
-Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Maintainer: Rock Developer <rock-dev@dfki.de>
 Uploaders:  <>
 Build-Depends: debhelper, gem2deb
-Standards-Version: 3.9.4
+Standards-Version: 4.1.3
 #Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-concurrent-ruby-ext.git
 #Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-concurrent-ruby-ext.git;a=summary
 Homepage: http://www.concurrent-ruby.com
@@ -14,7 +14,7 @@ Package: ruby-concurrent-ruby-ext
 Architecture: any
 XB-Ruby-Versions: ${ruby:Versions}
 Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
-# concurrent-ruby (~> 0.9.1)
+# concurrent-ruby (~> 1.0.5)
 Description: C extensions to optimize concurrent-ruby under MRI.
  C extensions to optimize the concurrent-ruby gem when running under MRI.
  Please see http://concurrent-ruby.com for more information.
