@@ -1,11 +1,9 @@
 # -*- encoding: utf-8 -*-
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'backports/version'
+require_relative 'lib/backports/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "backports"
-  gem.version       = "3.13.0"
+  gem.version       = Backports::VERSION
   gem.authors       = ["Marc-André Lafortune"]
   gem.email         = ["github@marc-andre.ca"]
   gem.description   = %q{Essential backports that enable many of the nice features of Ruby for earlier versions.}
