@@ -1,0 +1,23 @@
+<package>
+    <name>apaka-rock_patches</name>
+    <description brief="Patches for the Debian Package creation for Rock">
+        This package contains patches and specially prepared gems,
+        that are required to create Debian Packages with the tool apaka for Rock.
+    </description>
+    <author>Thomas Roehr/thomas.roehr@dfki.de</author>
+    <maintainer>Thomas Roehr/thomas.roehr@dfki.de</maintainer>
+    <url>https://github.com/rock-core/tools-apaka-rock_patches</url>
+    <copyright>
+        DFKI/robotik@dfki.de
+    </copyright>
+    <license>BSD-3-Clause and MIT</license>
+    <keywords>
+        <keyword>configuration</keyword>
+        <keyword>utilities</keyword>
+        <keyword>software packagaging</keyword>
+    </keywords>
+    <use>multi project</use>
+    <activity>active</activity>
+    <stage>0</stage>
+    <depend package="tools/apaka" />
+</package>
