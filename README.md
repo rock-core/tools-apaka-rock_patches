@@ -42,11 +42,12 @@ layout:
     - tools/apaka
 ```
 
-Now build and use apaka to build your release:
+Now build and use apaka to prepare your system and build your release:
 ```
 workspace$ autoproj osdeps
 workspace$ amake tools/apaka
 workspace$ source env.sh
+workspace$ apaka --prepare
 workspace$ apaka --patch-dir tools/apaka-rock_patches --release-name test
 ```
 
