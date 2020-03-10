@@ -1,0 +1,2 @@
+RENAME bin/console bin/whisper-console
+RENAME bin/setup bin/whisper-setup
