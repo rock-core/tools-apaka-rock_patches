@@ -11,7 +11,7 @@
 # If you need to specify the .gemspec (eg there is more than one)
 #export DH_RUBY_GEMSPEC=gem.gemspec
 
-rock_install_dir=@ROCK_INSTALL_DIR@
+rock_install_dir=@APAKA_INSTALL_DIR@
 check_ruby_versions = 2.0 2.1 2.2 2.3 2.4 2.5 2.6 2.7
 
 # Link directories for Qt from ruby/<short-version-name> to lib/.../ruby/<long-version-name>

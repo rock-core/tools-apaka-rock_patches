@@ -1,6 +1,6 @@
 # Do NOT install into usr/local since that is against the rules
 # usr/local should be used only for manually installed software
 #ruby/lib/local/lib/site_ruby   /usr/lib/
-ruby/lib/include               /usr/
-ruby/lib/lib                   /usr/
-pkgconfig                      /usr/lib/
+ruby/lib/include               @APAKA_INSTALL_DIR@
+ruby/lib/lib                   @APAKA_INSTALL_DIR@
+pkgconfig                      @APAKA_INSTALL_DIR@/lib/

@@ -1,1 +1,1 @@
-shell @ROCK_INSTALL_DIR@/share/scripts
+shell @APAKA_INSTALL_DIR@/share/scripts

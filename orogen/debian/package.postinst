@@ -2,7 +2,7 @@
 # post install script for the debianized tools/orogen package
 set -e
 
-rock_install_dir=@ROCK_INSTALL_DIR@
+rock_install_dir=@APAKA_INSTALL_DIR@
 
 orogen_version_file=${rock_install_dir}/lib/ruby/vendor_ruby/orogen/version.rb
 orogen_version_file_link=${rock_install_dir}/lib/orogen/version.rb

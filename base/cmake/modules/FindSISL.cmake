@@ -6,11 +6,11 @@ endif()
 
 find_path(SISL_INCLUDE_DIRS "sisl.h"
     HINTS ${SISL_PREFIX}/include ${CMAKE_INSTALL_PREFIX}/include
-    PATHS @ROCK_INSTALL_DIR@/include)
+    PATHS @APAKA_INSTALL_DIR@/include)
 find_library(SISL_LIBRARIES
     NAMES libsisl${CMAKE_SHARED_LIBRARY_SUFFIX} libsisl_opt${CMAKE_SHARED_LIBRARY_SUFFIX} libsisl.a libsisl_opt.a
     HINTS ${SISL_PREFIX}/lib ${CMAKE_INSTALL_PREFIX}/lib
-    PATHS @ROCK_INSTALL_DIR@/lib)
+    PATHS @APAKA_INSTALL_DIR@/lib)
 
 include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(SISL "SISL library not found, NURBS 3D curve wrappers won't be installed" SISL_INCLUDE_DIRS SISL_LIBRARIES)
