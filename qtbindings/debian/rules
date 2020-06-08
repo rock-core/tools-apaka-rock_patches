@@ -32,5 +32,5 @@ override_dh_link:
 	$(foreach rb_version,$(check_ruby_versions), $(if $(wildcard /usr/lib/ruby/$(rb_version).0),$(call rock_create_ruby_version_link,$(rb_version).0,$(rb_version)), @echo "Skipping dh_link for ruby version $(rb_version).0, which is not installed\n" ))
 
 override_dh_shlibdeps:
-	dh_shlibdeps -l$(shell pwd)/debian/ruby-qtbindings$(rock_install_dir)/lib/
+	dh_shlibdeps -l$(shell pwd)/$(debian_install_prefix)/lib/
 
