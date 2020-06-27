@@ -1,0 +1,12 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=@CMAKE_INSTALL_PREFIX@
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: @TARGET_NAME@
+Description: "Package for loading plugins at runtime"
+Version: @PROJECT_VERSION@
+Requires: console_bridge @PKGCONFIG_REQUIRES@
+Libs: -L${libdir} -l@TARGET_NAME@ @PKGCONFIG_LIBS@
+Cflags: -I${includedir} @PKGCONFIG_CFLAGS@
+
