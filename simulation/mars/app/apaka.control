@@ -1,0 +1,2 @@
+DEBIAN_RULES_EXTENSION 	mkdir -p $(debian_install_prefix)/share/mars; 
+DEBIAN_RULES_EXTENSION 	cd $(debian_install_prefix)/share/mars; for dir in `find @APAKA_RELEASE_DIR@ -type d -regex '.*share/mars/[^/]*'`; do basedir=`basename $$dir`; if [ ! -d $$basedir ]; then mkdir $$basedir; fi; cp -R $$dir/* $$basedir/; done 

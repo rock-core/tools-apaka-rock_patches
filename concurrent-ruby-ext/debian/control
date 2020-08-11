@@ -1,4 +1,4 @@
-Source: ruby-concurrent-ruby-ext
+Source: @APAKA_PACKAGE_NAME@
 Section: ruby
 Priority: optional
 Maintainer: Rock Developer <rock-dev@dfki.de>

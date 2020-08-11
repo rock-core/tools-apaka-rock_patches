@@ -1,0 +1,1 @@
+ENVSH_SOURCE_PATH @APAKA_INSTALL_DIR@/etc/orocos/profile.d/00.rtt.sh
