@@ -47,8 +47,8 @@ Now build and use apaka to prepare your system and build your release:
 workspace$ autoproj osdeps
 workspace$ amake tools/apaka
 workspace$ source env.sh
-workspace$ apaka --prepare
-workspace$ apaka --patch-dir tools/apaka-rock_patches --release-name test
+workspace$ apaka prepare
+workspace$ apaka build --patch-dir tools/apaka-rock_patches --release-name test
 ```
 
 ## Merge Request and Issue Tracking
