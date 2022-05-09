@@ -1,0 +1,20 @@
+Source: @APAKA_PACKAGE_NAME@
+Section: science
+Priority: optional
+Maintainer: Rock Packaging Daemon (based on apaka) <rock-dev@dfki.de>
+Uploaders: Rock Packaging Daemon (based on apaka) <rock-dev@dfki.de>
+Build-Depends: debhelper, gem2deb, rake, rock-master-22.04-ruby-generator, dh-autoreconf
+Standards-Version: 4.5.0
+Vcs-Git:
+Vcs-Browser:
+Homepage: https://github.com/monora/stream
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: rock-master-22.04-ruby-stream
+Architecture: any
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends}, ${shlibs:Depends}, rock-master-22.04-ruby-generator, ruby
+Description: stream - Extended External Iterators
+ Module Stream defines an interface for external iterators.
