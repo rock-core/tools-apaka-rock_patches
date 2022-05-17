@@ -1,0 +1,23 @@
+Source: @APAKA_PACKAGE_NAME@
+Section: science
+Priority: optional
+Maintainer: Rock Packaging Daemon (based on apaka) <rock-dev@dfki.de>
+Uploaders: Rock Packaging Daemon (based on apaka) <rock-dev@dfki.de>
+Build-Depends: debhelper, gem2deb, ruby, rock-master-22.04-ruby-webrick, dh-autoreconf
+Standards-Version: 4.5.0
+Vcs-Git:
+Vcs-Browser:
+Homepage: http://yardoc.org
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: rock-master-22.04-ruby-yard
+Architecture: any
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends}, ${shlibs:Depends}, rock-master-22.04-ruby-webrick, ruby
+Description: Documentation tool for consistent and usable documentation in Ruby.
+ YARD is a documentation generation tool for the Ruby programming language.
+ It enables the user to generate consistent, usable documentation that can be
+ exported to a number of formats very easily, and also supports extending for
+ custom Ruby constructs such as custom class level definitions.
