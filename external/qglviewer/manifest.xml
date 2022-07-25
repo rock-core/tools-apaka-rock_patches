@@ -1,0 +1,9 @@
+<package>
+  <description brief="">
+  </description>
+  <author></author>
+  <license></license>
+  <url></url>
+  <depend package="qt4"/>
+  <depend package="qt4-opengl"/>
+</package>
