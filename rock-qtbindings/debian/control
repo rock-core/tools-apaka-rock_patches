@@ -1,0 +1,20 @@
+Source: @APAKA_PACKAGE_NAME@
+Section: ruby
+Priority: optional
+Maintainer: Rock Packaging Daemon (based on apaka) <rock-dev@dfki.de>
+Uploaders: Rock Packaging Daemon (based on apaka) <rock-dev@dfki.de>
+Build-Depends: debhelper,  gem2deb, cmake, libqt4-dev, libqt4-opengl-dev, libqtwebkit-dev, dh-autoreconf, libgl1-mesa-dev
+Standards-Version: 4.5.0
+Vcs-Git:
+Vcs-Browser:
+Homepage: http://github.com/rock-core/qtbindings
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: rock-master-23.08-ruby-rock-qtbindings
+Architecture: any
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends}, ${shlibs:Depends}, ruby
+Description: Qt bindings for ruby
+ qtbindings provides ruby bindings to QT4.x. It is derived from the kdebindings project.
